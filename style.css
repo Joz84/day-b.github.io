@@ -1,0 +1,79 @@
+body {
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: arial;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+}
+
+h2, h3, h4 {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+}
+
+/*img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}*/
+
+/*h4, ul, ol {
+  text-align: left;
+}*/
+
+a, a:hover {
+  text-decoration: none;
+}
+
+p, ul, ol {
+  font-size: 20px;
+}
+
+.cadre {
+  background: #E2F3DC;
+  border: 3px solid #C1E6B6;
+  margin: 20px 100px;
+  padding: 30px 70px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.color-green {
+  color: #458D2E;
+}
+
+.btn-pink {
+  display: inline-block;
+  color: white;
+  background: #C86472;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  color: white;
+  opacity: 0.8;
+}
+
