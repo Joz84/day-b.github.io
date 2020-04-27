@@ -5,8 +5,38 @@
 ## Lien vers la <a href="https://joz84.github.io/day-b.github.io/" target="_blank">démo</a>
 
 ## Les divisions
+### Le cadre
+Nous souhaitons créer un cadre avec un fond vert autour de chaque section. Pour cela nous avons besoin d'une nouvelle balise : la balise division ```<div></div>```. Par exemple pour la 1ère section :
+
+#### HTML (l.10-16)
+```html
+ <div>
+   <h1>Les Muffins de Grand Mère</h1>
+   <h2>Fondants et croustillants</h2>
+   <img src="images/muffin.jpg" alt="muffin">
+   <br>
+   <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx">En savoir plus</a>
+ </div>
+```
+Il faut en suite ajouter le CSS associé pour ajouter modifier le style du cadre :
+
+#### CSS
+```css
+
+```
+
+Exercice : Encadrer les autres sections avec la balise ```<div>``` pour que celles-ci soient également cadrées comme présenté sur l'image ci dessous :
+<img src="images-readme/cadres.jpg" alt="cadres>
 
 ## Les classes
+
+  <div>
+    <h3>Suggestions</h3>
+    <img src="images/suggestion1.jpg">
+    <img src="images/suggestion2.jpg">
+    <img src="images/suggestion3.jpg">
+  </div>
+
 
 ## Corrections du code précédent
 
