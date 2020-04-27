@@ -108,7 +108,7 @@ Les points "." devant les mots "avatar" et "production" sont là pour indiquer a
 </body>
 ```
 
-#### HTML (l.10-12  
+#### HTML (l.10-12)  
 ```html
 <div class="cadre">
   <h1 class="color-green">Les Muffins de Grand Mère</h1>
@@ -178,7 +178,8 @@ background: lightgreen;
 }*/
 ```
 
-## Une palette de couleurs plus large
+## Définir une palette de couleurs plus large
+
 ### Les différentes notations des couleurs
 Il existe 4 manières différentes de définir une couleur :
 * Le nom mais le nombre de couleur est limité, exemple: "pink".
@@ -187,11 +188,18 @@ Il existe 4 manières différentes de définir une couleur :
 * Le code rgba (red, green, blue, transparence). Le dernier paramètre varie entre 0 et 1 et permet de gérer la transparence.
 
 ```css
-h3 {
- color: pink;
- color: #FFC0CB;
- color: rgb(255, 192, 203);
- color: rgba(255, 192, 203, 0.8);
+body {
+ background: pink;
+ background: #FFC0CB;
+ background: rgb(255, 192, 203);
+ background: rgba(255, 192, 203, 0.2);
+}
+
+.color-green {
+  color: green;
+  color: #008000;
+  color: rgb(0, 128, 0);
+  color: rgba(0, 128, 0, 0.8);
 }
 ```
 <i>Remarque :</i> Pour obtenir différentes teintes de gris, il suffit d'utiliser le code rgb avec 3 fois le même nombre. Par exemple : color: rgb(125, 125, 125);
@@ -218,6 +226,25 @@ h3 {
 ### Armoniser les images avec les couleurs
 * <a href="http://labs.tineye.com/multicolr/" target="_blank">labs.tineye.com</a>
 * http://www.colr.org/
+
+### Modification des couleurs dans le fichier CSS
+
+#### CSS
+```css
+body {
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ...
+}
+.cadre {
+  background: #E2F3DC;
+}
+
+.color-green {
+  color: #458D2E;
+}
+```
 
 ## De nouvelles propriétés CSS
 
