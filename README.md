@@ -35,7 +35,7 @@ Encadrer les autres sections avec la balise ```<div>``` pour que celles-ci soien
 ## Les classes
 Pour illustrer cette notion nous allons ajouter une section intitulée "Vos productions" sur notre site web. Cette section présente 3 images que l'on a téléchargé et renommé dans le dossier "images". On souhaite modifier le style de ces images pour qu'elles soient plutot rectangulaires.
 
-#### HTML (l.76-81)
+#### HTML (l.74-79)
 ```html
   <div>
     <h3>Vos productions</h3>
@@ -64,7 +64,7 @@ La solution est de "nommer" les images et d'associer le style à ces "noms" plut
  <img src="images/muffin.jpg" alt="muffin" class="avatar">
 ```
 
-#### HTML (l.76-81)
+#### HTML (l.74-79)
 ```html
   <div>
     <h3>Vos productions</h3>
@@ -117,7 +117,7 @@ Les points "." devant les mots "avatar" et "production" sont là pour indiquer a
 </div>
 ```
 
-#### HTML (l.18-19, 27-28, 76-77)
+#### HTML (l.18-19, 27-28, 74-75)
 ```html
 <div class="cadre">
  <h3 class="color-green">...</h3>
@@ -278,6 +278,14 @@ Les propriétés présentées ici permettent de modifier les marges interieures 
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 5px 5px 10px grey;
+}
+
+.production {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px grey;
 }
 ```
 
