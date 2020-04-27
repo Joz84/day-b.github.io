@@ -15,11 +15,13 @@
 ```css
 h3 {
  color: pink;
- color: #FF530D;
- color: rgb(255, 83, 13);
- color: rgba(255, 83, 13, 1.0);
+ color: #FFC0CB;
+ color: rgb(255, 192, 203);
+ color: rgba(255, 192, 203, 0.8);
 }
 ```
+<i>Remarque :</i> Pour obtenir différentes teintes de gris, il suffit d'utiliser le code rgb avec 3 fois le même nombre. Par exemple : color: rgb(125, 125, 125);
+
 ### Les liens et pligins utils pour s'inspirer
 * https://paletton.com/
 * https://colorhunt.co/
