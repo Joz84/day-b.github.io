@@ -26,17 +26,19 @@ Il faut en suite ajouter le CSS associé pour ajouter modifier le style du cadre
 ```
 
 Exercice : Encadrer les autres sections avec la balise ```<div>``` pour que celles-ci soient également cadrées comme présenté sur l'image ci dessous :
-<img src="images-readme/cadres.jpg" alt="cadres>
+<img src="images-readme/cadres.png" alt="cadres>
 
 ## Les classes
 
+#### HTML (l.76-81)
+```html
   <div>
     <h3>Suggestions</h3>
     <img src="images/suggestion1.jpg">
     <img src="images/suggestion2.jpg">
     <img src="images/suggestion3.jpg">
   </div>
-
+```
 
 ## Corrections du code précédent
 
