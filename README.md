@@ -18,7 +18,7 @@ Nous souhaitons créer un cadre avec un fond vert autour de chaque section. Pour
    <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx">En savoir plus</a>
  </div>
 ```
-Il faut en suite ajouter le CSS associé pour ajouter modifier le style du cadre :
+Il faut en suite ajouter le CSS associé pour modifier le style du cadre :
 
 #### CSS
 ```css
@@ -28,20 +28,59 @@ div {
 
 ```
 
-Exercice : Encadrer les autres sections avec la balise ```<div>``` pour que celles-ci soient également cadrées comme présenté sur l'image ci dessous :
+## Exercice
+Encadrer les autres sections avec la balise ```<div>``` pour que celles-ci soient également cadrées comme présenté sur l'image ci dessous :
 <img src="images-readme/cadres.png" alt="cadres">
 
 ## Les classes
+Pour illustrer cette notion nous allos ajouter une section intitulée "Vos productions" sur notre site web. Cette section présente 3 images. On souhaite modifier le style de ces images pour qu'elles soit plutot rectangulaires.
 
 #### HTML (l.76-81)
 ```html
   <div>
-    <h3>Suggestions</h3>
-    <img src="images/suggestion1.jpg">
-    <img src="images/suggestion2.jpg">
-    <img src="images/suggestion3.jpg">
+    <h3>Vos productions</h3>
+    <img src="images/production1.jpg">
+    <img src="images/production2.jpg">
+    <img src="images/production3.jpg">
   </div>
 ```
+
+#### CSS
+```css
+img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+```
+Ceci a bien redimentionné les 3 photos mais malheureusement cela a aussi modifié la photo de la 1ère section qui à l'origine été carré.
+
+Alors comment faire ?
+
+La solution est de "nommer" les images et d'associer le style à ces "nom" plutôt qu'au tag ```<img>```. Ces "noms" sont appellé "class" en HTML. Ainsi les lignes précédentes deviennent :
+
+#### HTML (l.76-81)
+```html
+  <div>
+    <h3>Vos productions</h3>
+    <img src="images/production1.jpg" class="production">
+    <img src="images/production2.jpg" class="production">
+    <img src="images/production3.jpg" class="production">
+  </div>
+```
+
+Dans le fichier CSS, pour retrouver les images par rapport à leur classe "production" plutôt que par rapport à leur tag ```<img>```, il suffit d'écrire :
+
+#### CSS
+```css
+.production {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+```
+
+Le point "." devant le mot "production" est là pour indiquer au navigateur qu'il d'oit chercher une classe et non plus un tag.
 
 ## Corrections du code précédent
 
