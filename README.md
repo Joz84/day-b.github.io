@@ -259,8 +259,7 @@ Les propriétés présentées ici permettent de modifier les marges interieures 
 
 <img src="images-readme/boxmodel.png" alt="boxmodel">
 
-
-
+### Modification de ces propriétés dans le fichier CSS
 
 #### CSS
 ```css
@@ -282,9 +281,11 @@ Les propriétés présentées ici permettent de modifier les marges interieures 
 }
 ```
 
-#### HTML (l.)
+### Mise en forme du bouton
+
+#### HTML (l.15)
 ```html
-  <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" target="_blanck" class="btn-pink">En savoir plus</a>
+  <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" target="_blank" class="btn-pink">En savoir plus</a>
 
 ```
 #### CSS
