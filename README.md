@@ -22,11 +22,14 @@ Il faut en suite ajouter le CSS associé pour ajouter modifier le style du cadre
 
 #### CSS
 ```css
+div {
+ background: lightgreen;
+}
 
 ```
 
 Exercice : Encadrer les autres sections avec la balise ```<div>``` pour que celles-ci soient également cadrées comme présenté sur l'image ci dessous :
-<img src="images-readme/cadres.png" alt="cadres>
+<img src="images-readme/cadres.png" alt="cadres">
 
 ## Les classes
 
