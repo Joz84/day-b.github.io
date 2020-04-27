@@ -10,8 +10,14 @@
 
 ## Corrections du code précédent
 
-## Une palettes de couleurs plus large
+## Une palette de couleurs plus large
 ### Les différentes notations des couleurs
+Il existe 4 manières différentes de définir une couleur :
+* Le nom mais le nombre de couleur est limité, exemple: "pink".
+* Le code exadecimal
+* Le code rgb (red, green, blue)
+* Le code rgba (red, green, blue, transparence). Le dernier paramètre varie entre 0 et 1 et permet de gérer la transparence.
+
 ```css
 h3 {
  color: pink;
@@ -22,7 +28,7 @@ h3 {
 ```
 <i>Remarque :</i> Pour obtenir différentes teintes de gris, il suffit d'utiliser le code rgb avec 3 fois le même nombre. Par exemple : color: rgb(125, 125, 125);
 
-### Les liens et pligins utils pour s'inspirer
+### Les générateurs de palette de couleurs 
 * https://paletton.com/
 * https://colorhunt.co/
 * https://coolors.co/
@@ -30,18 +36,20 @@ h3 {
 * https://www.colorzilla.com/
 * <a href="https://graphiste.com/blog/choisir-palette-couleurs" target="_blank">10 liens</a>
 
-### Les gradients
+### Les générateurs de gradients
 * https://uigradients.com/
 * https://webgradients.com/
+* https://cssgradient.io/
+* https://www.colorzilla.com/gradient-editor/
 
-### Les background SVG
+### Les générateurs de background SVG
 * https://www.svgbackgrounds.com/
 * https://www.heropatterns.com/
 * <a href="https://bashooka.com/coding/15-svg-css-background-pattern-resources/" target="_blank">15 liens</a>
 
 ### Armoniser les images avec les couleurs
-<a href="http://labs.tineye.com/multicolr/" target="_blank">labs.tineye.com</a>
-http://www.colr.org/
+* <a href="http://labs.tineye.com/multicolr/" target="_blank">labs.tineye.com</a>
+* http://www.colr.org/
 
 ## De nouvelles propriétés CSS
 
