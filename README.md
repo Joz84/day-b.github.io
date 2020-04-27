@@ -94,12 +94,46 @@ Dans le fichier CSS, pour retrouver les images par rapport à leurs classes "ava
 Les points "." devant les mots "avatar" et "production" sont là pour indiquer au navigateur qu'il doit chercher des classes et non plus un tag.
 
 ## Corrections du code précédent
+* On créer une classe ".cadre" que l'on associe à toutes les div comportant un cadre (pour le moment c'est le cas de toutes).
 * On créer des classes pour modifier la position du text (.text-center, et .text-left).
 * On créer des une classe pour changer la couleur de la police en vert (.color-green).
 * On commente toutes les propriétés devenues inutiles.
 
 <i>Remarque :</i> les symboles ```/*...*/``` permet de mettre les lignes en commentaires. Cela veut dire qu'elles ne seront pas vues par le navigateur.  
 
+#### HTML (l.9)
+```html
+<body class="text-center">
+ ...
+</body>
+```
+
+#### HTML (l.10-12  
+```html
+<div class="cadre">
+  <h1 class="color-green">Les Muffins de Grand Mère</h1>
+  <h2 class="color-green">Fondants et croustillants</h2>
+  ...
+</div>
+```
+
+#### HTML (l.18-19, 27-28, 76-77)
+```html
+<div class="cadre">
+ <h3 class="color-green">...</h3>
+ ...
+</div>
+```
+
+#### HTML (l.32-33, 48-49)
+```html
+<div class="cadre text-left">
+  <h4  class="color-green">Ingredients</h4>
+  ...
+</div>
+```
+
+#### CSS
 ```css
 .text-center {
   text-align: center;
@@ -110,7 +144,11 @@ Les points "." devant les mots "avatar" et "production" sont là pour indiquer a
 }
 
 .color-green {
-  color: #458D2E;
+  color: green;
+}
+
+.cadre {
+background: lightgreen;
 }
 
 h1 {
@@ -134,8 +172,11 @@ h2, h3, h4 {
 /*h4, ul, ol {
   text-align: left;
 }*/
-```
 
+/*div {
+background: lightgreen;
+}*/
+```
 
 ## Une palette de couleurs plus large
 ### Les différentes notations des couleurs
