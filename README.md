@@ -48,8 +48,8 @@ Pour illustrer cette notion nous allons ajouter une section intitulée "Vos prod
 #### CSS
 ```css
 img {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 ```
@@ -85,8 +85,8 @@ Dans le fichier CSS, pour retrouver les images par rapport à leurs classes "ava
 }
 
 .production {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 ```
@@ -281,11 +281,12 @@ Les propriétés présentées ici permettent de modifier les marges interieures 
 }
 
 .production {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 3px;
   box-shadow: 2px 2px 10px grey;
+  margin: 10px;
 }
 ```
 
