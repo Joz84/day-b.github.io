@@ -33,7 +33,7 @@ Encadrer les autres sections avec la balise ```<div>``` pour que celles-ci soien
 <img src="images-readme/cadres.png" alt="cadres">
 
 ## Les classes
-Pour illustrer cette notion nous allos ajouter une section intitulée "Vos productions" sur notre site web. Cette section présente 3 images. On souhaite modifier le style de ces images pour qu'elles soit plutot rectangulaires.
+Pour illustrer cette notion nous allons ajouter une section intitulée "Vos productions" sur notre site web. Cette section présente 3 images que l'on a téléchargé et renommé dans le dossier "images". On souhaite modifier le style de ces images pour qu'elles soient plutot rectangulaires.
 
 #### HTML (l.76-81)
 ```html
