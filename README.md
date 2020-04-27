@@ -53,11 +53,16 @@ img {
   object-fit: cover;
 }
 ```
-Ceci a bien redimentionné les 3 photos mais malheureusement cela a aussi modifié la photo de la 1ère section qui à l'origine été carré.
+Ceci a bien redimentionné les 3 photos mais malheureusement cela a aussi modifié la photo de la 1ère section qui à l'origine été carrée.
 
 Alors comment faire ?
 
-La solution est de "nommer" les images et d'associer le style à ces "nom" plutôt qu'au tag ```<img>```. Ces "noms" sont appellé "class" en HTML. Ainsi les lignes précédentes deviennent :
+La solution est de "nommer" les images et d'associer le style à ces "noms" plutôt qu'au tag ```<img>```. Ces "noms" sont appellé "class" en HTML. Ainsi les lignes précédentes deviennent :
+
+#### HTML (l.13)
+```html
+ <img src="images/muffin.jpg" alt="muffin" class="avatar">
+```
 
 #### HTML (l.76-81)
 ```html
@@ -69,10 +74,16 @@ La solution est de "nommer" les images et d'associer le style à ces "nom" plut�
   </div>
 ```
 
-Dans le fichier CSS, pour retrouver les images par rapport à leur classe "production" plutôt que par rapport à leur tag ```<img>```, il suffit d'écrire :
+Dans le fichier CSS, pour retrouver les images par rapport à leurs classes "avatar" et "production" plutôt que par rapport à leur tag ```<img>```, il suffit d'écrire :
 
 #### CSS
 ```css
+.avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
 .production {
   width: 350px;
   height: 250px;
@@ -80,9 +91,51 @@ Dans le fichier CSS, pour retrouver les images par rapport à leur classe "produ
 }
 ```
 
-Le point "." devant le mot "production" est là pour indiquer au navigateur qu'il d'oit chercher une classe et non plus un tag.
+Les points "." devant les mots "avatar" et "production" sont là pour indiquer au navigateur qu'il doit chercher des classes et non plus un tag.
 
 ## Corrections du code précédent
+* On créer des classes pour modifier la position du text (.text-center, et .text-left).
+* On créer des une classe pour changer la couleur de la police en vert (.color-green).
+* On commente toutes les propriétés devenues inutiles.
+
+<i>Remarque :</i> les symboles ```/*...*/``` permet de mettre les lignes en commentaires. Cela veut dire qu'elles ne seront pas vues par le navigateur.  
+
+```css
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.color-green {
+  color: #458D2E;
+}
+
+h1 {
+  /*color: green;*/
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+}
+
+h2, h3, h4 {
+  /*color: green;*/
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+}
+
+/*img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}*/
+
+/*h4, ul, ol {
+  text-align: left;
+}*/
+```
+
 
 ## Une palette de couleurs plus large
 ### Les différentes notations des couleurs
