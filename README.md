@@ -248,6 +248,20 @@ body {
 
 ## De nouvelles propriétés CSS
 
+Les propriétés présentées ici permettent de modifier les marges interieures et exterieures les arrondis des angles les contours et les ombres d'une box. Nous prendrons comme exemple la box ".cadre".
+
+### Définitions des propriétés
+* border: les contours
+* margin: marges extérieures
+* padding: marges intérieurs
+* border-radius: l'arrondi des angles
+* box-shaddow: l'ombre portée
+
+<img src="images-readme/boxmodel.png" alt="boxmodel">
+
+
+
+
 #### CSS
 ```css
 .cadre {
