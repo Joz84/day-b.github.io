@@ -248,4 +248,46 @@ body {
 
 ## De nouvelles propriétés CSS
 
+#### CSS
+```css
+.cadre {
+  background: #E2F3DC;
+  border: 3px solid #C1E6B6;
+  margin: 20px 100px;
+  padding: 30px 70px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
+}
 
+.avatar {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px grey;
+}
+```
+
+#### HTML (l.)
+```html
+  <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" target="_blanck" class="btn-pink">En savoir plus</a>
+
+```
+#### CSS
+
+```css
+.btn-pink {
+  display: inline-block;
+  color: white;
+  background: #C86472;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  color: white;
+  opacity: 0.8;
+}
+```
